@@ -35,9 +35,6 @@ exports.signin = async function(req, res, next){
         const { id, email, username } = user;
 
         const shouldLogin = await user.comparePassword(req.body.password);
-        // return res.status(200).json({
-        //             message: req.body.password
-        // });
         if(shouldLogin){
             const token = jwt.sign({
                 id,
