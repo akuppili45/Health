@@ -6,3 +6,6 @@ mongoose.connect('mongodb://localhost:27017/health',
 );
 mongoose.set('useCreateIndex', true);
 module.exports.User = require('./user');
+//module.exports.Food = require('./food');
+//Create a foods schema
+//Create a workouts schema
