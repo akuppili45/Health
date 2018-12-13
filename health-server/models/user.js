@@ -15,7 +15,12 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    foods: [
+        {
+            
+        }
+    ]
 });
 
 userSchema.pre("save", async function(next){ //right before we run this document, run an async function
